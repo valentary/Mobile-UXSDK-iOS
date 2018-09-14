@@ -39,6 +39,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.source       = { :http => "https://dh7g4ai1w5iq6.cloudfront.net/ios_sdk/iOS_UXSDK_4.7.1_180904.zip"}
+  s.pod_target_xcconfig   = { 'ENABLE_BITCODE' => 'NO' }
+
   s.ios.vendored_frameworks = 'iOS_UXSDK/DJIUXSDK.framework'
 
 end
